@@ -179,6 +179,7 @@
 			children = (
 				259D0374290728E000C2298E /* My-AIM-App-Info.plist */,
 				25B199542905694600681D90 /* My_AIM_AppApp.swift */,
+				25D31AC0290A2FB7008B843D /* Resources */,
 				259D038829087DF000C2298E /* Navigatotrs */,
 				259D03792908636E00C2298E /* Home */,
 				25B199562905694600681D90 /* ContentView.swift */,
@@ -284,6 +285,13 @@
 				259D0372290728B400C2298E /* BiometricUnlockView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		25D31AC0290A2FB7008B843D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
