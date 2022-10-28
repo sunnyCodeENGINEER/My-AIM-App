@@ -17,24 +17,27 @@ struct NextClassButton: View {
             ZStack {
                 Image(systemName: "map.fill")
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 350, height: 200)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: UIScreen.main.bounds.width * 0.9, height: 200)
                     .rotationEffect(Angle(degrees: -30))
-                    .offset(x: 10, y: 20)
+                    .offset(x: 10, y: 40)
                     .opacity(animate ? 0.1 : 0.2)
                     .animation(.easeInOut(duration: 1.5).repeatForever(autoreverses: true), value: animate)
-                    .mask(RoundedRectangle(cornerRadius: 30))
+                    .mask(RoundedRectangle(cornerRadius: 70))
                     
                 HStack(alignment: .bottom){
                     Text("Where's\nmy\nnext\nclass")
-                        .font(.largeTitle)
+                        .font(.title)
                         .fontWeight(.black)
                         .multilineTextAlignment(.leading)
+                        .padding()
+
                         .shadow(color: Color("appText"), radius: 0.6)
                     Text("?")
                         .font(.system(size: 100))
                         .fontWeight(.black)
                         .offset(x: -40, y: 15)
+                        .padding(.bottom)
                         .shadow(color: Color("appText"), radius: 0.6)
                     
                     
@@ -49,7 +52,7 @@ struct NextClassButton: View {
                 }
                 .padding(.bottom)
             }
-            .padding()
+//            .padding()
             .frame(height: 200)
             .background(RoundedRectangle(cornerRadius: 70)
                 .fill(.ultraThickMaterial)

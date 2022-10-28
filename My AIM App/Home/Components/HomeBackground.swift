@@ -17,12 +17,18 @@ struct HomeBackground: View {
                 .ignoresSafeArea()
                 .cornerRadius(30)
                 .offset(y: 100)
+            
+            VStack {
+                UserImageHomeView()
+                
+                HomeScrollView()
+            }
         }
     }
 }
 
 struct HomeBackground_Previews: PreviewProvider {
     static var previews: some View {
-        HomeBackground()
+        HomeBackground().environmentObject(User.loadUser)
     }
 }

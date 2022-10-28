@@ -8,18 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var user: User = User.loadUser
     
     @Binding var useBiometrics: Bool
     @Binding var unlocked: Bool
     var body: some View {
         VStack {
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundColor(.accentColor)
-//            Text("Hello, world!")
-//            PasscodeView()
-            
             AppSecureAccessView(useBiometrics: $useBiometrics, unlocked: $unlocked)
+                .environmentObject(user)
 //            HomeView()
         }
 //        .padding()

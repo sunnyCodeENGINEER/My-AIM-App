@@ -13,8 +13,8 @@ struct HomeView: View {
             HomeBackground()
             
             
-            HomeScrollView()
-                .offset(y: 103)
+//            HomeScrollView()
+//                .offset(y: 103)
         }
         
     }
@@ -22,6 +22,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView().environmentObject(User.loadUser)
     }
 }

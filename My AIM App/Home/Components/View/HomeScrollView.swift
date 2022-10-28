@@ -13,7 +13,8 @@ struct HomeScrollView: View {
             
             VStack{
                 NextClassButton()
-                    .padding(.horizontal)
+                    .padding([.top, .leading, .trailing])
+                    .padding(.top, 50)
                 
                 Text("Latest On Campus")
                     .font(.title2)
@@ -26,7 +27,7 @@ struct HomeScrollView: View {
                         .padding(.horizontal)
                 }
             }
-            .offset(y: 100)
+//            .offset(y: 100)
         }
         .ignoresSafeArea()
         

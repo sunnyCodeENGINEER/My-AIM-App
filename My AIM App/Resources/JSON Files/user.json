@@ -1,0 +1,29 @@
+{
+    "firstName": "Emmanuel",
+    "surname": "Donkor",
+    "otherNames": "Kofi Awuateh",
+    "title": "Mr",
+    "gender": "Male",
+    "age": 20,
+    "image": "IMG_1375",
+    "address": {
+        "studentAddress": "Takoradi",
+        "city": "Sekondi-Takoradi",
+        "region": "Western Region",
+        "postalCode": "P.O. Box xyz"
+    },
+    "phoneNumbers": [
+        {"type": "home",
+            "number": "+233206230111"
+        }
+        ],
+    "course" : "Computer Engineering",
+    "id" : "20722792",
+    "birthDay" : "31 May 2002",
+    "schoolEmail" : "ekadonkor@st.knust.edu.gh",
+    "residentialAddress1" : "",
+    "residentialAddress2" : "",
+    "postalAddress" : "p.o. box ax1147, takoradi",
+    "nationality" : "Ghanaian",
+    "religion" : "Christian"
+}

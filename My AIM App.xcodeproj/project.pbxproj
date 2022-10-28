@@ -29,6 +29,9 @@
 		25B1998C290574DE00681D90 /* UserLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B1998B290574DE00681D90 /* UserLoginView.swift */; };
 		25B199932906A0BC00681D90 /* CreatePasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B199922906A0BC00681D90 /* CreatePasscodeView.swift */; };
 		25B199952906A86300681D90 /* ConfirmPasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B199942906A86300681D90 /* ConfirmPasscodeView.swift */; };
+		25D31AC4290B04CD008B843D /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 25D31AC3290B04CD008B843D /* user.json */; };
+		25D31AC6290B0509008B843D /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D31AC5290B0509008B843D /* UserDataModel.swift */; };
+		25D31AC8290B0928008B843D /* UserImageHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D31AC7290B0928008B843D /* UserImageHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		25B1998B290574DE00681D90 /* UserLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginView.swift; sourceTree = "<group>"; };
 		25B199922906A0BC00681D90 /* CreatePasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasscodeView.swift; sourceTree = "<group>"; };
 		25B199942906A86300681D90 /* ConfirmPasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPasscodeView.swift; sourceTree = "<group>"; };
+		25D31AC3290B04CD008B843D /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		25D31AC5290B0509008B843D /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		25D31AC7290B0928008B843D /* UserImageHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,7 @@
 				259D0383290870A700C2298E /* View */,
 				259D037C290863CF00C2298E /* Components */,
 				259D038129086E9100C2298E /* HomeBackground.swift */,
+				25D31AC7290B0928008B843D /* UserImageHomeView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -290,8 +297,26 @@
 		25D31AC0290A2FB7008B843D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				25D31AC2290B04A8008B843D /* JSON Files */,
+				25D31AC1290B0482008B843D /* JSON Managers */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		25D31AC1290B0482008B843D /* JSON Managers */ = {
+			isa = PBXGroup;
+			children = (
+				25D31AC5290B0509008B843D /* UserDataModel.swift */,
+			);
+			path = "JSON Managers";
+			sourceTree = "<group>";
+		};
+		25D31AC2290B04A8008B843D /* JSON Files */ = {
+			isa = PBXGroup;
+			children = (
+				25D31AC3290B04CD008B843D /* user.json */,
+			);
+			path = "JSON Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +423,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D31AC4290B04CD008B843D /* user.json in Resources */,
 				25B1995C2905694700681D90 /* Preview Assets.xcassets in Resources */,
 				25B199592905694700681D90 /* Assets.xcassets in Resources */,
 			);
@@ -430,10 +456,12 @@
 				259D0378290732AF00C2298E /* AppSecureAccessView.swift in Sources */,
 				259D0385290870E100C2298E /* HomeScrollView.swift in Sources */,
 				25B199952906A86300681D90 /* ConfirmPasscodeView.swift in Sources */,
+				25D31AC6290B0509008B843D /* UserDataModel.swift in Sources */,
 				259D038029086B8E00C2298E /* NewsRow.swift in Sources */,
 				25B1998429056A2400681D90 /* UserLoginTextView.swift in Sources */,
 				259D037E290863FF00C2298E /* NextClassButton.swift in Sources */,
 				259D037629072D6400C2298E /* UnlockView.swift in Sources */,
+				25D31AC8290B0928008B843D /* UserImageHomeView.swift in Sources */,
 				25B1998C290574DE00681D90 /* UserLoginView.swift in Sources */,
 				25B199572905694600681D90 /* ContentView.swift in Sources */,
 				259D038A29087E1D00C2298E /* HomeViewNavigator.swift in Sources */,
