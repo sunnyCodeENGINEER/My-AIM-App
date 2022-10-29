@@ -15,7 +15,6 @@ struct AppSecureAccessView: View {
 
     var body: some View {
         if isConfirmed {
-//            UnlockView()
             HomeViewNavigator(useBiometrics: $useBiometrics, unlocked: $unlocked)
         } else {
             PasscodeView(isConfirmed: $isConfirmed)

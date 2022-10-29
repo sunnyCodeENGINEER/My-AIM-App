@@ -8,20 +8,18 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Binding var currentPage: CurrentPage
+    
     var body: some View {
         ZStack{
-            HomeBackground()
-            
-            
-//            HomeScrollView()
-//                .offset(y: 103)
+            HomeBackground(currentPage: $currentPage)
         }
         
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView().environmentObject(User.loadUser)
-    }
-}
+//struct HomeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeView().environmentObject(User.loadUser)
+//    }
+//}

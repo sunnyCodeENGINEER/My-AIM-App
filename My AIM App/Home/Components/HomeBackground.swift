@@ -8,27 +8,48 @@
 import SwiftUI
 
 struct HomeBackground: View {
+    @Binding var currentPage: CurrentPage
+    @State private var animateBG: Bool = false
+    @State private var animateHeader: Bool = false
+    @State private var animateBody: Bool = false
+    
     var body: some View {
         ZStack{
             Color("appButton")
+                .opacity(animateBG ? 1 : 0)
                 .ignoresSafeArea()
             
             Color("appText")
                 .ignoresSafeArea()
                 .cornerRadius(30)
                 .offset(y: 100)
+                .opacity(animateBG ? 1 : 0)
             
             VStack {
-                UserImageHomeView()
+                UserImageHomeView(currentPage: $currentPage)
+                    .opacity(animateHeader ? 1 : 0)
                 
                 HomeScrollView()
+                    .offset(y: animateBody ? 0 : -1000)
+            }
+        }
+        .task {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                animateBG = true
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                animateHeader = true
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
+                animateBody = true
             }
         }
     }
 }
 
-struct HomeBackground_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeBackground().environmentObject(User.loadUser)
-    }
-}
+//struct HomeBackground_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeBackground().environmentObject(User.loadUser)
+//    }
+//}
+

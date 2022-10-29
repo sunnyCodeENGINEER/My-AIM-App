@@ -13,10 +13,10 @@ struct HomeViewNavigator: View {
     
     var body: some View {
         if unlocked {
-            HomeView()
+//            HomeView()
+            DisplayCurrentPage()
         } else {
             UnlockView(unlocked: $unlocked, useBiometrics: $useBiometrics)
-//            UnlockAppView(unlocked: $unlocked)
         }
     }
 }
