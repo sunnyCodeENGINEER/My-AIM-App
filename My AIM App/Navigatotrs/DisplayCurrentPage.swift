@@ -20,7 +20,7 @@ struct DisplayCurrentPage: View {
             case .payBillScreen:
                 HomeView(currentPage: $currentPage)
             case .checkResultsScreen:
-                HomeView(currentPage: $currentPage)
+                ResultsView(currentPage: $currentPage)
             case .registerCourses:
                 HomeView(currentPage: $currentPage)
             }

@@ -21,9 +21,3 @@ struct AppSecureAccessView: View {
         }
     }
 }
-
-//struct AppSecureAccessView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        AppSecureAccessView()
-//    }
-//}

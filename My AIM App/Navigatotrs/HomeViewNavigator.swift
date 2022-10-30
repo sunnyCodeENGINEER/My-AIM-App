@@ -13,16 +13,9 @@ struct HomeViewNavigator: View {
     
     var body: some View {
         if unlocked {
-//            HomeView()
             DisplayCurrentPage()
         } else {
             UnlockView(unlocked: $unlocked, useBiometrics: $useBiometrics)
         }
     }
 }
-
-//struct HomeViewNavigator_Previews: PreviewProvider {
-//    static var previews: some View {
-//        HomeViewNavigator()
-//    }
-//}

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		251806E3290DC072002F4932 /* courseData.json in Resources */ = {isa = PBXBuildFile; fileRef = 251806E2290DC071002F4932 /* courseData.json */; };
+		251806EB290DC396002F4932 /* ResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251806EA290DC396002F4932 /* ResultRow.swift */; };
+		251806ED290DD999002F4932 /* ResultsRowTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251806EC290DD999002F4932 /* ResultsRowTitle.swift */; };
+		251806EF290DDA77002F4932 /* ResultsRowBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251806EE290DDA77002F4932 /* ResultsRowBG.swift */; };
+		251806F2290DDB6B002F4932 /* ResultsRowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251806F1290DDB6B002F4932 /* ResultsRowsView.swift */; };
+		251806F4290DDE95002F4932 /* DetailedResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251806F3290DDE95002F4932 /* DetailedResultsView.swift */; };
+		251806F6290DF386002F4932 /* DetailedResultsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251806F5290DF386002F4932 /* DetailedResultsRow.swift */; };
+		251806F8290E0A22002F4932 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251806F7290E0A22002F4932 /* ResultsView.swift */; };
 		259D036F29071F6D00C2298E /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259D036E29071F6D00C2298E /* PasscodeView.swift */; };
 		259D03712907254800C2298E /* UnlockAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259D03702907254800C2298E /* UnlockAppView.swift */; };
 		259D0373290728B400C2298E /* BiometricUnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259D0372290728B400C2298E /* BiometricUnlockView.swift */; };
@@ -62,6 +70,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		251806E2290DC071002F4932 /* courseData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = courseData.json; sourceTree = "<group>"; };
+		251806EA290DC396002F4932 /* ResultRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRow.swift; sourceTree = "<group>"; };
+		251806EC290DD999002F4932 /* ResultsRowTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsRowTitle.swift; sourceTree = "<group>"; };
+		251806EE290DDA77002F4932 /* ResultsRowBG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsRowBG.swift; sourceTree = "<group>"; };
+		251806F1290DDB6B002F4932 /* ResultsRowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsRowsView.swift; sourceTree = "<group>"; };
+		251806F3290DDE95002F4932 /* DetailedResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedResultsView.swift; sourceTree = "<group>"; };
+		251806F5290DF386002F4932 /* DetailedResultsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedResultsRow.swift; sourceTree = "<group>"; };
+		251806F7290E0A22002F4932 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		259D036E29071F6D00C2298E /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
 		259D03702907254800C2298E /* UnlockAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockAppView.swift; sourceTree = "<group>"; };
 		259D0372290728B400C2298E /* BiometricUnlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricUnlockView.swift; sourceTree = "<group>"; };
@@ -128,6 +144,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		251806E6290DC328002F4932 /* Results View */ = {
+			isa = PBXGroup;
+			children = (
+				251806E8290DC35B002F4932 /* View */,
+				251806E7290DC34B002F4932 /* Components */,
+			);
+			path = "Results View";
+			sourceTree = "<group>";
+		};
+		251806E7290DC34B002F4932 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				251806F0290DDB44002F4932 /* View */,
+				251806E9290DC369002F4932 /* Components */,
+				251806F3290DDE95002F4932 /* DetailedResultsView.swift */,
+				251806F5290DF386002F4932 /* DetailedResultsRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		251806E8290DC35B002F4932 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				251806F7290E0A22002F4932 /* ResultsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		251806E9290DC369002F4932 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				251806EA290DC396002F4932 /* ResultRow.swift */,
+				251806EC290DD999002F4932 /* ResultsRowTitle.swift */,
+				251806EE290DDA77002F4932 /* ResultsRowBG.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		251806F0290DDB44002F4932 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				251806F1290DDB6B002F4932 /* ResultsRowsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		259D03792908636E00C2298E /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +270,7 @@
 			children = (
 				259D0374290728E000C2298E /* My-AIM-App-Info.plist */,
 				25B199542905694600681D90 /* My_AIM_AppApp.swift */,
+				251806E6290DC328002F4932 /* Results View */,
 				25D6790A290C6708004B3A44 /* Student Profile */,
 				25D31AC0290A2FB7008B843D /* Resources */,
 				259D038829087DF000C2298E /* Navigatotrs */,
@@ -338,6 +401,7 @@
 			isa = PBXGroup;
 			children = (
 				25D31AC3290B04CD008B843D /* user.json */,
+				251806E2290DC071002F4932 /* courseData.json */,
 			);
 			path = "JSON Files";
 			sourceTree = "<group>";
@@ -495,6 +559,7 @@
 			files = (
 				25D31AC4290B04CD008B843D /* user.json in Resources */,
 				25B1995C2905694700681D90 /* Preview Assets.xcassets in Resources */,
+				251806E3290DC072002F4932 /* courseData.json in Resources */,
 				25B199592905694700681D90 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +585,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				251806EF290DDA77002F4932 /* ResultsRowBG.swift in Sources */,
+				251806F8290E0A22002F4932 /* ResultsView.swift in Sources */,
 				25B199932906A0BC00681D90 /* CreatePasscodeView.swift in Sources */,
 				259D036F29071F6D00C2298E /* PasscodeView.swift in Sources */,
 				25D67918290C6F11004B3A44 /* UserProfileViewHeader.swift in Sources */,
@@ -529,11 +596,14 @@
 				25B199952906A86300681D90 /* ConfirmPasscodeView.swift in Sources */,
 				25D67922290C8F77004B3A44 /* UserProfileView.swift in Sources */,
 				25D31AC6290B0509008B843D /* UserDataModel.swift in Sources */,
+				251806ED290DD999002F4932 /* ResultsRowTitle.swift in Sources */,
 				25D67920290C8BD1004B3A44 /* UserContactInfoView.swift in Sources */,
 				259D038029086B8E00C2298E /* NewsRow.swift in Sources */,
 				25D6791E290C8960004B3A44 /* UserPersonalInfoView.swift in Sources */,
 				25D67916290C6E6B004B3A44 /* CurrentPage.swift in Sources */,
+				251806F4290DDE95002F4932 /* DetailedResultsView.swift in Sources */,
 				25D6791C290C802A004B3A44 /* UserInfoRow.swift in Sources */,
+				251806F2290DDB6B002F4932 /* ResultsRowsView.swift in Sources */,
 				25D6791A290C6FBF004B3A44 /* MyTabView.swift in Sources */,
 				25B1998429056A2400681D90 /* UserLoginTextView.swift in Sources */,
 				259D037E290863FF00C2298E /* NextClassButton.swift in Sources */,
@@ -545,10 +615,12 @@
 				259D038A29087E1D00C2298E /* HomeViewNavigator.swift in Sources */,
 				259D0373290728B400C2298E /* BiometricUnlockView.swift in Sources */,
 				25D67910290C679F004B3A44 /* UserProfileCirlceImage.swift in Sources */,
+				251806EB290DC396002F4932 /* ResultRow.swift in Sources */,
 				259D0387290871C100C2298E /* HomeView.swift in Sources */,
 				259D03712907254800C2298E /* UnlockAppView.swift in Sources */,
 				25D67912290C6AAC004B3A44 /* UserProfileSummary.swift in Sources */,
 				25B199552905694600681D90 /* My_AIM_AppApp.swift in Sources */,
+				251806F6290DF386002F4932 /* DetailedResultsRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

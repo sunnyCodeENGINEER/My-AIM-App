@@ -36,6 +36,11 @@ struct UserImageHomeView: View {
                     Text("\(user.firstName) \(user.otherNames)")
                 }
                 .foregroundColor(Color("appText"))
+                .onTapGesture {
+                    withAnimation(.easeInOut) {
+                        currentPage = .checkResultsScreen
+                    }
+                }
                 
                 Spacer()
         }

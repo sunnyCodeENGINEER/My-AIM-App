@@ -16,14 +16,6 @@ struct ContentView: View {
         VStack {
             AppSecureAccessView(useBiometrics: $useBiometrics, unlocked: $unlocked)
                 .environmentObject(user)
-//            HomeView()
         }
-//        .padding()
     }
 }
-
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
