@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct NextClassButton: View {
+    @Binding var currentPage: CurrentPage
     @State var animate: Bool = false
     
     var body: some View {
         Button{
-            
+            withAnimation(.easeInOut(duration: 2)) {
+                currentPage = .nextClass
+            }
         } label: {
             ZStack {
                 Image(systemName: "map.fill")
@@ -65,11 +68,5 @@ struct NextClassButton: View {
                 animate = true
             }
         }
-    }
-}
-
-struct NextClassButton_Previews: PreviewProvider {
-    static var previews: some View {
-        NextClassButton()
     }
 }

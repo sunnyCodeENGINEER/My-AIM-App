@@ -15,6 +15,7 @@
 		251806F4290DDE95002F4932 /* DetailedResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251806F3290DDE95002F4932 /* DetailedResultsView.swift */; };
 		251806F6290DF386002F4932 /* DetailedResultsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251806F5290DF386002F4932 /* DetailedResultsRow.swift */; };
 		251806F8290E0A22002F4932 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251806F7290E0A22002F4932 /* ResultsView.swift */; };
+		25180736290F1AAC002F4932 /* NextClassMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25180735290F1AAC002F4932 /* NextClassMap.swift */; };
 		259D036F29071F6D00C2298E /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259D036E29071F6D00C2298E /* PasscodeView.swift */; };
 		259D03712907254800C2298E /* UnlockAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259D03702907254800C2298E /* UnlockAppView.swift */; };
 		259D0373290728B400C2298E /* BiometricUnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259D0372290728B400C2298E /* BiometricUnlockView.swift */; };
@@ -78,6 +79,7 @@
 		251806F3290DDE95002F4932 /* DetailedResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedResultsView.swift; sourceTree = "<group>"; };
 		251806F5290DF386002F4932 /* DetailedResultsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedResultsRow.swift; sourceTree = "<group>"; };
 		251806F7290E0A22002F4932 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		25180735290F1AAC002F4932 /* NextClassMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextClassMap.swift; sourceTree = "<group>"; };
 		259D036E29071F6D00C2298E /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
 		259D03702907254800C2298E /* UnlockAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockAppView.swift; sourceTree = "<group>"; };
 		259D0372290728B400C2298E /* BiometricUnlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricUnlockView.swift; sourceTree = "<group>"; };
@@ -190,6 +192,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		25180731290F1A45002F4932 /* Next Class Map View */ = {
+			isa = PBXGroup;
+			children = (
+				25180734290F1A8C002F4932 /* View */,
+				25180733290F1A7E002F4932 /* Components */,
+			);
+			path = "Next Class Map View";
+			sourceTree = "<group>";
+		};
+		25180733290F1A7E002F4932 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				25180735290F1AAC002F4932 /* NextClassMap.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		25180734290F1A8C002F4932 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		259D03792908636E00C2298E /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +296,7 @@
 			children = (
 				259D0374290728E000C2298E /* My-AIM-App-Info.plist */,
 				25B199542905694600681D90 /* My_AIM_AppApp.swift */,
+				25180731290F1A45002F4932 /* Next Class Map View */,
 				251806E6290DC328002F4932 /* Results View */,
 				25D6790A290C6708004B3A44 /* Student Profile */,
 				25D31AC0290A2FB7008B843D /* Resources */,
@@ -619,6 +646,7 @@
 				259D0387290871C100C2298E /* HomeView.swift in Sources */,
 				259D03712907254800C2298E /* UnlockAppView.swift in Sources */,
 				25D67912290C6AAC004B3A44 /* UserProfileSummary.swift in Sources */,
+				25180736290F1AAC002F4932 /* NextClassMap.swift in Sources */,
 				25B199552905694600681D90 /* My_AIM_AppApp.swift in Sources */,
 				251806F6290DF386002F4932 /* DetailedResultsRow.swift in Sources */,
 			);

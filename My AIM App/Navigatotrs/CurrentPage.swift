@@ -8,5 +8,5 @@
 import Foundation
 
 enum CurrentPage {
-    case welcomeScreen, profileScreen, payBillScreen, checkResultsScreen, registerCourses
+    case welcomeScreen, profileScreen, payBillScreen, checkResultsScreen, registerCourses, nextClass
 }

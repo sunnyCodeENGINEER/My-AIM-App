@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct HomeScrollView: View {
+    @Binding var currentPage: CurrentPage
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
             
             VStack{
-                NextClassButton()
+                NextClassButton(currentPage: $currentPage)
                     .padding([.top, .leading, .trailing])
                     .padding(.top, 50)
                 
@@ -27,15 +28,8 @@ struct HomeScrollView: View {
                         .padding(.horizontal)
                 }
             }
-//            .offset(y: 100)
         }
         .ignoresSafeArea()
         
-    }
-}
-
-struct HomeScrollView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeScrollView()
     }
 }

@@ -29,7 +29,7 @@ struct HomeBackground: View {
                 UserImageHomeView(currentPage: $currentPage)
                     .opacity(animateHeader ? 1 : 0)
                 
-                HomeScrollView()
+                HomeScrollView(currentPage: $currentPage)
                     .offset(y: animateBody ? 0 : -1000)
             }
         }
@@ -46,10 +46,4 @@ struct HomeBackground: View {
         }
     }
 }
-
-//struct HomeBackground_Previews: PreviewProvider {
-//    static var previews: some View {
-//        HomeBackground().environmentObject(User.loadUser)
-//    }
-//}
 
