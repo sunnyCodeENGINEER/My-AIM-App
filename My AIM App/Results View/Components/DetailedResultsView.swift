@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct DetailedResultsView: View {
+    @Binding var selectedResult: Result
+//    @State var result: Result = Results.loadResults.results[0]
+    
     @Binding var showDetails: Bool
     @State var gradeColor: Color = Color("firstClass")
     @State var showGrades: Bool = false
@@ -16,12 +19,12 @@ struct DetailedResultsView: View {
     var body: some View {
         ZStack {
             VStack{
-                CwaCircle()
+                CwaCircle(selectedResult: $selectedResult)
                 
                 ScrollView(.vertical, showsIndicators: true){
                     VStack{
-                        ForEach(0..<9) { item in
-                            DetailedResultsRow(mark: Double(item) * 10)
+                        ForEach(0..<selectedResult.courses.count) { item in
+                            DetailedResultsRow(subject: selectedResult.courses[item].name, mark: Double(selectedResult.courses[item].score)!)
                                 .opacity(showGrades ? 1 : 0)
                                 .animation(.easeInOut(duration: 3), value: showGrades)
                         }
@@ -44,6 +47,7 @@ struct DetailedResultsView: View {
                         Image(systemName: "arrowshape.turn.up.backward.circle.fill")
                             .font(.largeTitle)
                             .foregroundColor(Color("appButton"))
+                            .background(Circle().foregroundColor(.white))
                         
                 }
                     .padding()
@@ -57,13 +61,9 @@ struct DetailedResultsView: View {
     
 }
 
-//struct DetailedResultsView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DetailedResultsView()
-//    }
-//}
-
 struct CwaCircle: View {
+    @Binding var selectedResult: Result
+    
     @State var cwaColor = Color("appButton")
     @State var showCWARingBG: Bool = false
     @State var showCWARing: Bool = false
@@ -99,14 +99,14 @@ struct CwaCircle: View {
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                             showCWARing = true
-                            currentCWA = 0.89
+                            currentCWA = CGFloat(Int(selectedResult.currentCWA)!) / 100
                         }
                     }
                 
                 VStack{
                     Text("CWA")
                     
-                    Text(String(currentCWA * 100))
+                    Text(selectedResult.currentCWA)
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(cwaColor)
@@ -120,6 +120,20 @@ struct CwaCircle: View {
                 }
             }
             .frame(width: UIScreen.main.bounds.width / 1.5, height: UIScreen.main.bounds.width / 1.2)
+            
+            HStack {
+                Text("Average for Level \(selectedResult.level) semester \(selectedResult.semester) is:")
+                Text("\(selectedResult.averageForSemester)")
+                    .foregroundColor(cwaColor)
+            }
+            .opacity(showCWAText ? 1 : 0)
+            .animation(.easeInOut(duration: 3), value: showCWAText)
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    showCWAText = true
+                }
+            }
+                
         }
         .padding(.top)
     }

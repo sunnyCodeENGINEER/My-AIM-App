@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AppSecureAccessView: View {
     
+    
     @Binding var useBiometrics: Bool
     @Binding var unlocked: Bool
     @AppStorage("isConfirmed") var isConfirmed: Bool = false

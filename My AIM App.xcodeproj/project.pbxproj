@@ -16,6 +16,12 @@
 		251806F6290DF386002F4932 /* DetailedResultsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251806F5290DF386002F4932 /* DetailedResultsRow.swift */; };
 		251806F8290E0A22002F4932 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251806F7290E0A22002F4932 /* ResultsView.swift */; };
 		25180736290F1AAC002F4932 /* NextClassMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25180735290F1AAC002F4932 /* NextClassMap.swift */; };
+		254C9FFF29105862008D20E0 /* nextClasses.json in Resources */ = {isa = PBXBuildFile; fileRef = 254C9FFE29105862008D20E0 /* nextClasses.json */; };
+		254CA00129105892008D20E0 /* NextClassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CA00029105892008D20E0 /* NextClassModel.swift */; };
+		254CA00329105C0D008D20E0 /* NextClassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CA00229105C0D008D20E0 /* NextClassCard.swift */; };
+		254CA005291061E8008D20E0 /* NextClassCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CA004291061E8008D20E0 /* NextClassCardView.swift */; };
+		254CA0072910621A008D20E0 /* NextClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CA0062910621A008D20E0 /* NextClassView.swift */; };
+		254CA00929106DB0008D20E0 /* ResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CA00829106DB0008D20E0 /* ResultsModel.swift */; };
 		259D036F29071F6D00C2298E /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259D036E29071F6D00C2298E /* PasscodeView.swift */; };
 		259D03712907254800C2298E /* UnlockAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259D03702907254800C2298E /* UnlockAppView.swift */; };
 		259D0373290728B400C2298E /* BiometricUnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259D0372290728B400C2298E /* BiometricUnlockView.swift */; };
@@ -80,6 +86,12 @@
 		251806F5290DF386002F4932 /* DetailedResultsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedResultsRow.swift; sourceTree = "<group>"; };
 		251806F7290E0A22002F4932 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		25180735290F1AAC002F4932 /* NextClassMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextClassMap.swift; sourceTree = "<group>"; };
+		254C9FFE29105862008D20E0 /* nextClasses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nextClasses.json; sourceTree = "<group>"; };
+		254CA00029105892008D20E0 /* NextClassModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextClassModel.swift; sourceTree = "<group>"; };
+		254CA00229105C0D008D20E0 /* NextClassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextClassCard.swift; sourceTree = "<group>"; };
+		254CA004291061E8008D20E0 /* NextClassCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextClassCardView.swift; sourceTree = "<group>"; };
+		254CA0062910621A008D20E0 /* NextClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextClassView.swift; sourceTree = "<group>"; };
+		254CA00829106DB0008D20E0 /* ResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsModel.swift; sourceTree = "<group>"; };
 		259D036E29071F6D00C2298E /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
 		259D03702907254800C2298E /* UnlockAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockAppView.swift; sourceTree = "<group>"; };
 		259D0372290728B400C2298E /* BiometricUnlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricUnlockView.swift; sourceTree = "<group>"; };
@@ -205,6 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				25180735290F1AAC002F4932 /* NextClassMap.swift */,
+				254CA00229105C0D008D20E0 /* NextClassCard.swift */,
+				254CA004291061E8008D20E0 /* NextClassCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -212,6 +226,7 @@
 		25180734290F1A8C002F4932 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				254CA0062910621A008D20E0 /* NextClassView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -420,6 +435,8 @@
 			isa = PBXGroup;
 			children = (
 				25D31AC5290B0509008B843D /* UserDataModel.swift */,
+				254CA00829106DB0008D20E0 /* ResultsModel.swift */,
+				254CA00029105892008D20E0 /* NextClassModel.swift */,
 			);
 			path = "JSON Managers";
 			sourceTree = "<group>";
@@ -429,6 +446,7 @@
 			children = (
 				25D31AC3290B04CD008B843D /* user.json */,
 				251806E2290DC071002F4932 /* courseData.json */,
+				254C9FFE29105862008D20E0 /* nextClasses.json */,
 			);
 			path = "JSON Files";
 			sourceTree = "<group>";
@@ -587,6 +605,7 @@
 				25D31AC4290B04CD008B843D /* user.json in Resources */,
 				25B1995C2905694700681D90 /* Preview Assets.xcassets in Resources */,
 				251806E3290DC072002F4932 /* courseData.json in Resources */,
+				254C9FFF29105862008D20E0 /* nextClasses.json in Resources */,
 				25B199592905694700681D90 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,15 +632,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				251806EF290DDA77002F4932 /* ResultsRowBG.swift in Sources */,
+				254CA0072910621A008D20E0 /* NextClassView.swift in Sources */,
 				251806F8290E0A22002F4932 /* ResultsView.swift in Sources */,
 				25B199932906A0BC00681D90 /* CreatePasscodeView.swift in Sources */,
 				259D036F29071F6D00C2298E /* PasscodeView.swift in Sources */,
 				25D67918290C6F11004B3A44 /* UserProfileViewHeader.swift in Sources */,
+				254CA00129105892008D20E0 /* NextClassModel.swift in Sources */,
 				259D038229086E9100C2298E /* HomeBackground.swift in Sources */,
 				259D0378290732AF00C2298E /* AppSecureAccessView.swift in Sources */,
 				259D0385290870E100C2298E /* HomeScrollView.swift in Sources */,
 				25B199952906A86300681D90 /* ConfirmPasscodeView.swift in Sources */,
 				25D67922290C8F77004B3A44 /* UserProfileView.swift in Sources */,
+				254CA00929106DB0008D20E0 /* ResultsModel.swift in Sources */,
 				25D31AC6290B0509008B843D /* UserDataModel.swift in Sources */,
 				251806ED290DD999002F4932 /* ResultsRowTitle.swift in Sources */,
 				25D67920290C8BD1004B3A44 /* UserContactInfoView.swift in Sources */,
@@ -631,6 +653,7 @@
 				251806F4290DDE95002F4932 /* DetailedResultsView.swift in Sources */,
 				25D6791C290C802A004B3A44 /* UserInfoRow.swift in Sources */,
 				251806F2290DDB6B002F4932 /* ResultsRowsView.swift in Sources */,
+				254CA005291061E8008D20E0 /* NextClassCardView.swift in Sources */,
 				25D6791A290C6FBF004B3A44 /* MyTabView.swift in Sources */,
 				25B1998429056A2400681D90 /* UserLoginTextView.swift in Sources */,
 				259D037E290863FF00C2298E /* NextClassButton.swift in Sources */,
@@ -638,6 +661,7 @@
 				259D037629072D6400C2298E /* UnlockView.swift in Sources */,
 				25D31AC8290B0928008B843D /* UserImageHomeView.swift in Sources */,
 				25B1998C290574DE00681D90 /* UserLoginView.swift in Sources */,
+				254CA00329105C0D008D20E0 /* NextClassCard.swift in Sources */,
 				25B199572905694600681D90 /* ContentView.swift in Sources */,
 				259D038A29087E1D00C2298E /* HomeViewNavigator.swift in Sources */,
 				259D0373290728B400C2298E /* BiometricUnlockView.swift in Sources */,

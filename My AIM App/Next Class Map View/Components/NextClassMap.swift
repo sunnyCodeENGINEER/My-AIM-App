@@ -26,6 +26,7 @@ struct NextClassMap: View {
                         Image(systemName: "arrowshape.turn.up.backward.circle.fill")
                             .font(.largeTitle)
                             .foregroundColor(Color("appButton"))
+                            .background(Circle().foregroundColor(.white))
                         
                 }
                     .padding()

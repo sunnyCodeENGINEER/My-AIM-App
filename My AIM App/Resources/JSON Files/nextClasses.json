@@ -1,0 +1,40 @@
+{
+  "classes": [
+    {
+      "courseCode": "MATH 252",
+      "courseName": "Multivariable Calculus",
+      "location": "FOSS",
+      "classroom": "GF 018",
+      "time": "10:30am - 12:30pm",
+      "lecturerTitle": "Mr.",
+      "lecturerName": "Gee"
+    },
+    {
+      "courseCode": "COE 252",
+      "courseName": "Engineering Labs II",
+      "location": "TMI Lab",
+      "classroom": "Lab A",
+      "time": "1:00pm - 3:00pm",
+      "lecturerTitle": "Mr.",
+      "lecturerName": "Foo"
+    },
+    {
+      "courseCode": "TE 252",
+      "courseName": " Electromagnetic Fields",
+      "location": "PB",
+      "classroom": "020",
+      "time": "3:30pm - 5:30pm",
+      "lecturerTitle": "Mr.",
+      "lecturerName": "Gee"
+    },
+    {
+      "courseCode": "COE 247",
+      "courseName": "Digital Systems",
+      "location": "PB",
+      "classroom": " 018",
+      "time": "6pm - 7pm",
+      "lecturerTitle": "Mr.",
+      "lecturerName": "Gee"
+    }
+  ]
+}

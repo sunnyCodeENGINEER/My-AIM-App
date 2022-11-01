@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DetailedResultsRow: View {
     @State var subjectColor = Color("appButton")
-    @State var subject: String = "Subject"
+    @State var subject: String
     @State var gradeStr: String = "A"
     @State var score: CGFloat = 0.0
     @State var mark: Double
@@ -85,6 +85,6 @@ struct DetailedResultsRow: View {
 
 struct DetailedResultsRow_Previews: PreviewProvider {
     static var previews: some View {
-        DetailedResultsRow(mark: 45)
+        DetailedResultsRow(subject: "Subject", mark: 45)
     }
 }

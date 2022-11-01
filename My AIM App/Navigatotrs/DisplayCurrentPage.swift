@@ -24,7 +24,8 @@ struct DisplayCurrentPage: View {
             case .registerCourses:
                 HomeView(currentPage: $currentPage)
             case .nextClass:
-                NextClassMap(currentPage: $currentPage)
+//                NextClassMap(currentPage: $currentPage)
+                NextClassView(currentPage: $currentPage)
             }
         }
     }

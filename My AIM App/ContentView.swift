@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @StateObject var user: User = User.loadUser
+    @StateObject var classes: NextClass = NextClass.loadClasses
     
     @Binding var useBiometrics: Bool
     @Binding var unlocked: Bool
@@ -16,6 +18,7 @@ struct ContentView: View {
         VStack {
             AppSecureAccessView(useBiometrics: $useBiometrics, unlocked: $unlocked)
                 .environmentObject(user)
+                .environmentObject(classes)
         }
     }
 }

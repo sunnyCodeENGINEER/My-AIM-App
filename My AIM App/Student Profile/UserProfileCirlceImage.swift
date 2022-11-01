@@ -15,9 +15,6 @@ struct UserProfileCirlceImage: View {
     
     var body: some View {
         ZStack{
-//            RoundedRectangle(cornerRadius: width / 2)
-//                .frame(width: width)
-//                .foregroundColor(Color("appButton"))
             
             Image(user.image)
                 .resizable()

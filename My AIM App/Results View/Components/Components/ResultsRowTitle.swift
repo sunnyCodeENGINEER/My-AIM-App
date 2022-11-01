@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ResultsRowTitle: View {
+    @EnvironmentObject var results: Results
+    
     @Binding var showDetails: Bool
     var title: String = "Title"
+    @Binding var selectedResult: Result
     
     var body: some View {
         VStack {
@@ -27,14 +30,15 @@ struct ResultsRowTitle: View {
                 VStack {
                     ScrollView(.vertical, showsIndicators: true) {
                         VStack {
-                            ForEach (0..<9) { index in
+                            ForEach (0..<results.results.count) { index in
                                 
                                 Button {
                                     withAnimation(.easeInOut) {
+                                        selectedResult = results.results[index]
                                         showDetails = true
                                     }
                                 } label: {
-                                    ResultRow()
+                                    ResultRow(result: results.results[index])
                                         .foregroundColor(Color("buttonText"))
                                 }
                             }

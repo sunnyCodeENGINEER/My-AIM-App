@@ -8,22 +8,21 @@
 import SwiftUI
 
 struct ResultRow: View {
-    var academicYear: String = "2020/2021 Academic Year"
-    var level: String = "level 200"
-    var semester: String = "First Semester"
+    @State var result: Result
     
     var body: some View {
         HStack {
             VStack(alignment: .leading){
-                Text(academicYear)
+                
+                Text(result.academicYear + " Academic Year")
                     .foregroundColor(Color("buttonText"))
                     .padding()
                     .background(RoundedRectangle(cornerRadius: 40)
                         .foregroundColor(Color("appButton")))
-                Text(level.uppercased())
+                Text("level \(result.level)".uppercased())
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                Text(semester)
+                Text("Semester " + result.semester)
                     .font(.title2)
             }
             .padding()
@@ -41,6 +40,6 @@ struct ResultRow: View {
 
 struct ResultRow_Previews: PreviewProvider {
     static var previews: some View {
-        ResultRow()
+        ResultRow(result: Results.loadResults.results[0]).environmentObject(Results.loadResults)
     }
 }

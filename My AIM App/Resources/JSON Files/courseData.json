@@ -1,69 +1,77 @@
-[
-    {
-        "academicYear": "2020/2021",
-        "semester": "1",
-        "averageForSemester": "80",
-        "currentCWA": "80",
-        "courses": [
-            {
-             "name": "Addition",
-             "score": "80"
-            },
-            {
-                "name": "Subtraction",
-                "score": "80"
-            }
-        ]
-        
-    },
-    {
-        "academicYear": "2020/2021",
-        "semester": "2",
-        "averageForSemester": "80",
-        "currentCWA": "80",
-        "courses": [
-            {
-             "name": "Multiplication",
-             "score": "80"
-            },
-            {
-                "name": "Division",
-                "score": "80"
-            }
-        ]
-        
-    },
-    {
-        "academicYear": "2021/2022",
-        "semester": "1",
-        "averageForSemester": "80",
-        "currentCWA": "80",
-        "courses": [
-            {
-             "name": "Long Division",
-             "score": "80"
-            },
-            {
-                "name": "Change Of Subjects",
-                "score": "80"
-            }
-        ]
-        
-    },
-    {
-        "academicYear": "2020/2021",
-        "semester": "2",
-        "averageForSemester": "80",
-        "currentCWA": "80",
-        "courses": [
-            {
-             "name": "Calculus I",
-             "score": "80"
-            },
-            {
-            "name": "Algebra I",
-                "score": "80"
-            }
-        ]
-    }
-]
+
+{
+    "results": [
+        {
+            "academicYear": "2020/2021",
+            "semester": "1",
+            "averageForSemester": "80",
+            "currentCWA": "80",
+            "level": "100",
+            "courses": [
+                {
+                    "name": "Addition",
+                    "score": "80"
+                },
+                {
+                    "name": "Subtraction",
+                    "score": "80"
+                }
+            ]
+            
+        },
+        {
+            "academicYear": "2020/2021",
+            "semester": "2",
+            "averageForSemester": "80",
+            "currentCWA": "80",
+            "level": "100",
+            "courses": [
+                {
+                    "name": "Multiplication",
+                    "score": "80"
+                },
+                {
+                    "name": "Division",
+                    "score": "80"
+                }
+            ]
+            
+        },
+        {
+            "academicYear": "2021/2022",
+            "semester": "1",
+            "averageForSemester": "80",
+            "currentCWA": "80",
+            "level": "200",
+            "courses": [
+                {
+                    "name": "Long Division",
+                    "score": "80"
+                },
+                {
+                    "name": "Change Of Subjects",
+                    "score": "80"
+                }
+            ]
+            
+        },
+        {
+            "academicYear": "2021/2022",
+            "semester": "2",
+            "averageForSemester": "80",
+            "currentCWA": "80",
+            "level": "200",
+            "courses": [
+                {
+                    "name": "Calculus I",
+                    "score": "80"
+                },
+                {
+                    "name": "Algebra I",
+                    "score": "80"
+                }
+            ]
+        }
+    ]
+    
+}
